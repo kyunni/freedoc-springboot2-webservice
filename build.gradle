@@ -21,14 +21,15 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'junit:junit:4.13.1'
+    implementation 'junit:junit:4.13.2'
 
     implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
-    implementation 'org.projectlombok:lombok:1.18.20'
-    implementation 'org.springframeowrk.boot:spring-boot-starter-mustache'
+    implementation 'org.projectlombok:lombok:1.18.22'
+    implementation 'org.springframework.boot:spring-boot-starter-mustache'
+    implementation 'org.springframework.boot:spring-boot-devtools:2.6.6'
 
     compileOnly 'org.projectlombok:lombok'
-    runtimeOnly 'com.h2database:h2:1.4.200'
+    runtimeOnly 'com.h2database:h2:1.4.199'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
